@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша продукція</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/blocks/our_producrs.css">
+    <script src="./src/index.js" defer></script>
+</head>
+<body class="page__body">
+    <header class="header">
+        <div class="header__top">
+            <img src="./images/aqua_food_logo+symbol-05.png" alt="Логотип Aqua Foods" class="header__logo" />
+            <a href="#menu" class="icon icon--menu"></a>
+        </div>
+   
+    <aside class="menu" id="menu">
+        <div class="menu__container">
+            <div class="menu__grid">
+                <div class="menu__top">
+                    <img src="./images/aqua_food_logo+symbol-05.png" alt="aqua_food" class="menu__logo"/>
+                    <button class="menu__close" aria-label="Close menu">
+                        <span class="icon icon--close"></span>
+                    </button>
+                </div>
+    
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#" onclick="redirectToMain()">Головна</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#about" onclick="redirectToAbout()">Про нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="./our-products.html">Наша продукція</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#contacts" onclick="redirectToContacts()">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <a href="#" class="contact-btn" onclick="redirectToContacts()">Зв'яжіться з нами</a>
+
+            </div>
+        </div>
+    </aside>
+</header> 
+    <main class="main">
+        <div class="dropdown">
+            <h2 class="section-title">Наша продукція</h2>
+            <h5>Категорії товарів</h5>
+            <button class="btn custom-dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Мінеральна вода
+              <span class="dropdown-arrow"></span>
+            </button>
+            <ul class="dropdown-menu custom-dropdown-menu">
+              <li><a class="dropdown-item active" href="#water">Мінеральна вода</a></li>
+              <li><a class="dropdown-item" href="#appetizers">Снеки</a></li>
+              <li><a class="dropdown-item" href="#syrop">Сиропи</a></li>
+              <li><a class="dropdown-item" href="#spicies">Спеції та приправи</a></li>
+              <li><a class="dropdown-item" href="#pasta">Паста</a></li>
+              <li><a class="dropdown-item" href="#can">Консерви</a></li>
+              <li><a class="dropdown-item" href="#kids">Дитяче харчування</a></li>
+            </ul>
+          </div>
+          <!-- WATER -->
+            <div class="partners-grid" id="water">
+                <div class="partner-card">
+                    <img src="./images/LogoProducts/Logo1.png" alt="Image 1" class="carousel-img">
+
+                </div>
+                <div class="partner-card">
+                    <img src="./images/LogoProducts/Logo2.png" alt="Image 2" class="carousel-img">
+
+                </div>
+                <div class="partner-card">
+                    <img src="./images/LogoProducts/Logo3.png" alt="Image 4" class="carousel-img">
+                    
+                </div>
+                <div class="partner-card">
+                    <img src="./images/LogoProducts/логоФруктик.png" alt="Image 3" class="carousel-img">
+                    
+                </div>
+                <div class="partner-card">
+                    <img src="./images/LogoProducts/Логолатиниця.png" alt="Image 3" class="carousel-img">
+                    
+                </div>
+            </div>
+
+          <!-- APPETIZER -->
+          <div class="partners-grid" id="appetizers">
+            <div class="partner-card">
+                <img src="./images/LogoProducts/image_2024-12-11_12-19-31.png" alt="Image 1" class="carousel-img">
+
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/image_2024-12-11_13-38-06.png" alt="Image 2" class="carousel-img">
+
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/2647630-logotip-desnjanochka.jpg" alt="Image 4" class="carousel-img">
+                
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/tucha.png" alt="Image 3" class="carousel-img">
+                
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/image_2024-12-11_12-19-31.png" alt="Image 3" class="carousel-img">
+                
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/image34.png" alt="Image 3" class="carousel-img">
+                
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/image40.png" alt="Image 3" class="carousel-img">
+                
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/image33.png" alt="Image 3" class="carousel-img">
+                
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/image36.png" alt="Image 3" class="carousel-img">
+                
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/image37.png" alt="Image 3" class="carousel-img">
+                
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/image38.png" alt="Image 3" class="carousel-img">
+                
+            </div>
+        </div>
+
+        <!-- region PASTA  -->
+        <div class="partners-grid" id="pasta">
+            <div class="partner-card">
+                <img src="./images/LogoProducts/logo_BushtrukAFE.jpg" alt="Image 1" class="carousel-img">
+
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/GPлогокрасный.png" alt="Image 2" class="carousel-img">
+
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/ЛоготипRU.png" alt="Image 4" class="carousel-img">
+            </div>
+        </div>
+        <div class="partners-grid" id="can">
+            <div class="partner-card">
+                <img src="./images/LogoProducts/Logotype_all_Монтажная_область_1_копия_13.png" alt="Image 1" class="carousel-img">
+
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/Logotype_all_Монтажная_область_1_копия_5.png" alt="Image 2" class="carousel-img">
+
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/Logotype_all_Монтажная_область_1_копия_9.png" alt="Image 4" class="carousel-img">
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/Лого Супій_ТМ-1.png" alt="Image 4" class="carousel-img">
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/Lokki_Logo-1.png" alt="Image 4" class="carousel-img">
+            </div>
+        </div>
+
+        <!--SOUCE -->
+
+        <div class="partners-grid" id="souce">
+            <div class="partner-card">
+                <img src="./images/LogoProducts/logo-appetito.png" alt="Image 1" class="carousel-img">
+
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/Томатино-лого.png" alt="Image 2" class="carousel-img">
+
+            </div>
+        </div>
+        <div class="partners-grid" id="kids">
+            <div class="partner-card">
+                <img src="./images/LogoProducts/logo_elfik_all.png" alt="Image 1" class="carousel-img">
+            </div>
+        </div>
+        <div class="partners-grid" id="spicies">
+            <div class="partner-card">
+                <img src="./images/LogoProducts/logo.png" alt="Image 1" class="carousel-img">
+            </div>
+        </div>
+        <div class="partners-grid" id="syrop">
+            <div class="partner-card">
+                <img src="./images/LogoProducts/logo_Деко.png" alt="Image 1" class="carousel-img">
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/logo_lubystok_green.png" alt="Image 1" class="carousel-img">
+            </div>
+            <div class="partner-card">
+                <img src="./images/LogoProducts/logo_Dobryk_purple.png" alt="Image 1" class="carousel-img">
+            </div>
+        </div>
+    </main>
+      
+      <footer class="footer">
+        <div class="footer__content">
+            <img src="./images/aqua_food_logo+symbol-05.png" alt="Aqua Foods" class="footer__logo">
+            
+            <div class="footer__section">
+                <h3 class="footer__title">Компанія</h3>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#about-section" class="footer__link">Про нас</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#our-products" class="footer__link">Наша продукція</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#contacts" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#contacts" class="footer__link">Зв'яжіться з нами</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./privacy policy (на сайт) (1).docx" class="footer__link" download>Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer__section">
+                <h3 class="footer__title">Контакти</h3>
+                <div class="footer__list">
+                    <a href="https://maps.google.com" class="footer__contact">
+                        <img src="./images/icons/Vector.png" alt="Location" class="footer__contact-icon service-icon">
+                        місто Київ, вул. Ямська, 28
+                    </a>
+                    <a href="tel:+380672996564" class="footer__contact">
+                        <img src="./images/icons/phone.png" alt="Phone" class="footer__contact-icon service-icon">
+                        +38 (067) 299 65 64
+                    </a>
+                    <a href="mailto:office@af.org.ua" class="footer__contact service-icon">
+                        <img src="./images/icons/envelop.png" alt="Email" class="footer__contact-icon">
+                        office@af.org.ua
+                    </a>
+                </div>
+            </div>
+    
+            <p class="footer__copyright">© 2024 All Rights Reserved</p>
+        </div>
+        <img src="./images/Image.png" alt="" class="footer__background" aria-hidden="true">
+    </footer>
+</body>
+</html>

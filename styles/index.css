@@ -1,0 +1,60 @@
+@import url(./reset.css);
+
+@import url(./blocks/drop-down.css);
+@import url(./blocks/footer.css);
+@import url(./blocks/header.css);
+@import url(./blocks/products.css);
+@import url(./blocks/menu.css);
+@import url(./blocks/desctop.css);
+@import url(./blocks/services.css);
+@import url(./blocks/partners.css);
+@import url(./blocks/contact-card.css);
+@import url(./blocks/stats.css);
+@import url(./blocks/carousel.css);
+@import url(./blocks/hero.css);
+
+
+.page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.page__body {
+    margin: 0;
+}
+
+.contact-btn {
+    background: #14B8A6;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container__grid {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: auto;
+}
+.hero__img {
+    min-width: 393px;
+    min-height: 216px;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}

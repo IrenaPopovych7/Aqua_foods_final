@@ -1,0 +1,173 @@
+:root {
+  --text-dark: #333;
+  --text-light: #666;
+  --primary-blue: #0a2540;
+  --white: #fff;
+  --shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  --font-family: Arial, sans-serif;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  color: var(--text-dark);
+  background-color: #f5f5f5;
+}
+
+/* Container for the entire page */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Stats Section */
+.stats-section {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.stats-card {
+  background-color: var(--white);
+  position: relative;
+  z-index: 2;
+  padding: 30px 20px;
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+.stats-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stats-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stat-text {
+  font-size: 14px;
+  color: var(--text-light);
+  max-width: 160px;
+  text-align: center;
+}
+
+/* Content layout */
+.content-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Image Section */
+.image-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* About Section */
+.about-section {
+  width: 100%;
+}
+
+.about-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.about-text {
+  font-size: 15px;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+/* Desktop Responsive Styles */
+@media (min-width: 992px) {
+  .stats-card {
+    padding: 40px;
+    box-shadow: var(--shadow);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .stats-title {
+    font-size: 28px;
+  }
+
+  .stat-number {
+    font-size: 32px;
+  }
+
+  .stat-text {
+    font-size: 15px;
+  }
+  
+  /* Desktop layout - image left, text right */
+  .content-layout {
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 60px;
+  }
+  
+  .image-section {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  .about-section {
+    flex: 1;
+  }
+  
+  .about-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  
+  .about-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+

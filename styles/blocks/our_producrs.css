@@ -1,0 +1,29 @@
+.partners-grid {
+    display: grid;
+    gap: 24px;
+    padding: 24px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Partner card */
+.partner-card {
+    background: #ffffff;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+}
+
+.carousel-img {
+    max-width: 125px;
+    max-height: 107px;
+    object-fit: contain;
+}
