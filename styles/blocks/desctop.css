@@ -64,9 +64,9 @@
 
     .header__bottom {
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 48px;
-        gap: 48px;
+        /* gap: 48px; */
     }
 
     .header__title {

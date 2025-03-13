@@ -15,6 +15,84 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="./src/index.js" defer></script>
     <link rel="stylesheet" href="./styles/index.css">
+    <style>
+        /* Stats Section */
+  .stats-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+  
+  .stats-card {
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .stats-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .stat-text {
+    font-size: 14px;
+    color: #666;
+    max-width: 160px;
+    text-align: center;
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 768px) {
+    .stats-card {
+      padding: 40px;
+    }
+    
+    .stats-title {
+      font-size: 28px;
+    }
+    
+    .stats-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    
+    .stat-number {
+      font-size: 32px;
+    }
+    
+    .stat-text {
+      font-size: 15px;
+    }
+  }
+    </style>
   </head>
   <body class="page__body">
      <!-- #region side-menu -->
@@ -64,7 +142,7 @@
             <img src="./images/main_image.png" alt="Працівник Aqua Foods на складі" class="header__image">
         </div>
         <div class="header__bottom">
-            <h1 class="header__title">Надійний партнер у дистрибуції в Києві та області</h1>
+            <h1 class="header__title">Надійний партнер <br/>у дистрибуції в Києві <br/>та області</h1>
             <p class="subtitle">Виведіть свій бізнес на новий рівень з нами</p>
 
             <ul class="header__features">
@@ -93,68 +171,79 @@
 
      <main>
         <!-- #region STATISTICS -->
-        <section class="stats-section">
-            <div class="stats-box">
-              <h2>Aqua Foods у цифрах</h2>
-              <div class="stats">
-                <div><strong>7000+</strong> <span>активних торгових точок</span></div>
-                <div><strong>4000+</strong> <span>кв. м складських приміщень</span></div>
-                <div><strong>400</strong> <span>кв. м офіс в центрі Києва</span></div>
-                <div><strong>150</strong> <span>працівників</span></div>
-              </div>
-            </div>
-          </section>
-<!-- #endregion HEADER -->
-    
-        <!-- #region ABOUT-US -->
-        <section class="about-section" id="about-section">
-            <!-- <div class="container-grid"> -->
-
-            <div class="about-image">
-                <img src="./images/man_front_view.png" alt="Warehouse operations" class="about-img">
-            </div>
-
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">Про Aqua Foods</h2>
-                    
-                    <p class="about-paragraph">
-                        Ми – провідна компанія з дистрибуції в Києві та області, що надає повний спектр послуг для вашого бізнесу. У нашому автопарку налічується 60 машин, завдяки чому ми обробляємо до 150 тонн продукції на добу. Наші 23 маршрути працюють 24 години на добу, включаючи святкові дні, що дозволяє забезпечувати безперервну доставку товарів. Ми надаємо підтримку клієнтам на кожному етапі співпраці.
-                    </p>
-                    
-                    <p class="about-paragraph">
-                        У центрі Києва ми маємо власний офіс, який можна використовувати для проведення презентацій вашого продукту або мотиваційних зустрічей серед супервайзерів, торгових представників та мерчендайзерів. Наш автоматизований комерційний відділ оснащений планшетами, що дозволяє торговим представникам мати актуальну інформацію в режимі реального часу.
-                    </p>
-                    
-                    <p class="about-paragraph">
-                        Наша місія – забезпечити найвищий рівень обслуговування і підтримки, допомагаючи клієнтам досягати нових висот у їхній діяльності.
-                    </p>
-                </div>
-                    
-            <!-- </div> -->
+  <!-- HTML Structure -->
+<section class="stats-section">
+    <div class="stats-card">
+      <h2 class="stats-title">Aqua Foods у цифрах</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">7000+</div>
+          <div class="stat-text">активних торгових точок</div>
         </div>
-        </section>
+        <div class="stat-item">
+          <div class="stat-number">4000+</div>
+          <div class="stat-text">кв. м складських приміщень</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">400</div>
+          <div class="stat-text">кв. м офіс в центрі Києва</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">150</div>
+          <div class="stat-text">працівників</div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- #endregion HEADER -->
 
-        <!-- #endregion -->
+<section class="contact-form-section container">
+    <div class="contact-form-container">
+        <!-- Hero Image with Text -->
+        <div class="hero-container">
+          <div class="hero-image">
+            <img src="./images/man_front_view.png" alt="Warehouse worker with forklift">
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+            <h2 class="section-title">Про Aqua Foods</h2>
+                    
+            <p class="about-paragraph">
+                Ми – провідна компанія з дистрибуції в Києві та області, що надає повний спектр послуг для вашого бізнесу. У нашому автопарку налічується 60 машин, завдяки чому ми обробляємо до 150 тонн продукції на добу. Наші 23 маршрути працюють 24 години на добу, включаючи святкові дні, що дозволяє забезпечувати безперервну доставку товарів. Ми надаємо підтримку клієнтам на кожному етапі співпраці.
+            </p>
+            
+            <p class="about-paragraph">
+                У центрі Києва ми маємо власний офіс, який можна використовувати для проведення презентацій вашого продукту або мотиваційних зустрічей серед супервайзерів, торгових представників та мерчендайзерів. Наш автоматизований комерційний відділ оснащений планшетами, що дозволяє торговим представникам мати актуальну інформацію в режимі реального часу.
+            </p>
+            
+            <p class="about-paragraph">
+                Наша місія – забезпечити найвищий рівень обслуговування і підтримки, допомагаючи клієнтам досягати нових висот у їхній діяльності.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
         
         <!-- #region services -->
         <section class="services container">
             <h2 class="section-title">Наші послуги</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="./images/icons/store.png" alt="Store icon" class="store">
+                    <img src="./images/icons/store.svg" alt="Store icon" class="service-icon-big">
                     <h3 class="service-title">Дистрибюція товарів</h3>
                 </div>
                 <div class="service-card">
-                    <img src="./images/icons/cub.png" alt="Box icon" class="service-icon">
+                    <img src="./images/icons/cub.svg" alt="Box icon" class="service-icon-big">
                     <h3 class="service-title">Складська логістика</h3>
                 </div>
                 <div class="service-card">
-                    <img src="./images/icons/track.png" alt="Truck icon" class="service-icon">
+                    <img src="./images/icons/Vector.svg" alt="Truck icon" class="service-icon-big">
                     <h3 class="service-title">Транспортна логістика</h3>
                 </div>
                 <div class="service-card">
-                    <img src="./images/icons/headphones.png" alt="Headset icon" class="service-icon">
+                    <img src="./images/icons/headfons.svg" alt="Headset icon" class="service-icon-big">
                     <h3 class="service-title">Обробка замовлень</h3>
                 </div>
             </div>
@@ -446,7 +535,7 @@
         },
         breakpoints: {
             320: { slidesPerView: 1 }, 
-            768: { slidesPerView: 1 },  
+            768: { slidesPerView: 2 },  
             
         },
     });

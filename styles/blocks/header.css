@@ -80,9 +80,3 @@
     height: 24px;
     filter: invert(48%) sepia(95%) saturate(373%) hue-rotate(134deg) brightness(88%) contrast(91%);
 }
-
-@media (max-width: 768px) {
-    .header {
-        position: absolute;
-    }
-}
