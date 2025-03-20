@@ -142,6 +142,7 @@
   
   /* Contact Form */
   .contact-form-section {
+    margin: 15px;
     padding: var(--section-padding) 0;
   }
   

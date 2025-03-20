@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         allSections.forEach(section => section.style.display = "none");
     }
 
-    // hideAllSections(); 
+    hideAllSections(); 
     
     const waterId = document.querySelector("#water");
     
@@ -37,4 +37,27 @@ function redirectToMain() {
 function redirectToAbout() {
     window.location.href = "index.html#about-section";
 }
-
+function redirectToWater() {
+    window.location.href = "our-products.html#water";
+}
+function redirectToAppetizers() {
+    window.location.href = "our-products.html#appetizers";
+}
+function redirectToSyrop() {
+    window.location.href = "our-products.html#syrop";
+}
+function redirectToSpicies() {
+    window.location.href = "our-products.html#spicies";
+}
+function redirectToPasta() {
+    window.location.href = "our-products.html#pasta";
+}
+function redirectToCan() {
+    window.location.href = "our-products.html#can";
+}
+function redirectToKids() {
+    window.location.href = "our-products.html#kids";
+}
+function redirectToSouce() {
+    window.location.href = "our-products.html#souce";
+}

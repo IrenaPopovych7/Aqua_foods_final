@@ -35,6 +35,8 @@
     border-radius: 4px;
     text-decoration: none;
     font-weight: 600;
+    height: 48px;
+    text-align: center;
 }
 
 .container__grid {
