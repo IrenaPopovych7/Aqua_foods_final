@@ -37,6 +37,44 @@
   object-fit: cover;
   border-radius: 4px;
 }
+.contact-form-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-paragraph {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.intro-text, .mission-text {
+  font-size: 120%; /* Робимо курсивний текст більшим */
+  color: #333;
+}
+
+.intro-text em, .mission-text em {
+  font-style: italic;
+  display: block;
+}
+
+.highlighted-content {
+  font-size: 100%; /* Середній розмір для основного тексту */
+}
+
+.highlighted-content strong {
+  color: #1a73e8; /* Можна змінити колір виділеного тексту */
+  font-weight: 600;
+}
+
+.mission-text strong {
+  font-weight: 700; /* Подвійне виділення для найважливішої частини */
+}
 
 /* Desktop styles */
 @media (min-width: 768px) {
@@ -64,6 +102,7 @@
   
   .about-paragraph {
       font-size: 18px;
+  margin-bottom: 16px;
   }
 }
 
