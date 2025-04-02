@@ -199,6 +199,7 @@
   
   /* Desktop styles */
   @media (min-width: 768px) {
+
     .contacts-grid {
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
@@ -219,7 +220,7 @@
       font-size: 2.2rem;
     }
   }
-}
+
 @media (min-width: 768px) {
     .contact-cards {
         grid-template-columns: repeat(3, 1fr);

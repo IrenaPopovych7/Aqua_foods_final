@@ -29,7 +29,6 @@
 .header__bottom {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     text-align: start;
     padding: 20px;
     background-color: #0E1D2A;
